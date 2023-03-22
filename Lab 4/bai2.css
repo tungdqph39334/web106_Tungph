@@ -1,0 +1,41 @@
+body{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container{ 
+    background-color: #36B87D;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1.5fr;
+    grid-auto-rows: 100px;
+    gap: 10px;
+    padding: 10px;
+    grid-template-areas:   
+    "aa aa aa "
+    "bb cc dd "
+    "bb ee ee"
+}
+.item{
+    background-color: #BCE2C9;
+}
+.header{
+    line-height: 100px;
+    grid-area: aa;
+}
+.menu{
+    line-height: 210px;
+    grid-area: bb;
+}
+.main {
+    line-height: 100px;
+    grid-area: cc;
+}
+.right {
+    line-height: 100px;
+    grid-area: dd;
+}
+.footer {
+    line-height: 100px;
+    grid-area: ee;
+}
