@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  .gird-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 10px;
+    gap: 10px;
+    text-align: center;
+    background-color: #BCE2C9;
+  }
+  .item{
+    background-color: #36B87D;
+    padding: 50px;
+  }
+  .item1{
+    grid-area: 1 / 2 / 3 / 5;
+  }
+</style>
+<body>
+    <div class="gird-container">
+        <div class="item">1</div>
+        <div class="item item1">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+    </div>
+</body>
+</html>
