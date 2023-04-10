@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản Phẩm</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" &quot; rel="stylesheet">
+</head>
+<style>
+    .navbar-collapse {
+  flex-grow: 0;
+}
+
+.nav-link {
+  color: white;
+}
+h1{
+    text-align: center;
+}
+b{
+    color: red;
+}
+
+/* banner */
+.banner {
+  width: 100%;
+}
+
+/* tên truyện */
+p {
+  text-align: center;
+}
+
+/* Khung */
+
+.khung {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 0.5em;
+}
+
+.anh {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.item {
+  width: 24%;
+}
+
+.khung2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 0.5em;
+}
+
+.item2 {
+  width: 24%;
+}
+
+/* footer */
+
+#footer {
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 0.5em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.ten {
+  border-bottom-right-radius:10px ;
+  border-bottom-left-radius: 10px;
+}
+
+@media screen and (max-width: 598px) {
+  .item {
+    width: 49%;
+  }
+  
+  .item2 {
+    width: 49%;
+  }
+}
+
+@media screen and (max-width: 398px) {
+  .item {
+    width: 99%;
+  }
+  
+  .item2 {
+    width: 99%;
+  }
+}
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg bg-secondary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html"> <img src="./Ảnh/logo.jpg" alt="" style="width: 70px; height: 50px;"> </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./page2.html">Sản Phẩm</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Tin Tức</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+            </div>
+        </div>
+    </nav>
+
+    <img src="./Ảnh/banner1.webp" alt="" class="banner">
+    <h1>Các Sản Phẩm</h1>
+
+    <h4>Giày NiKe</h4>
+
+    <div class="khung">
+        <div class="item">
+            <a href="#"><img src="./Ảnh/nike1.png" alt="" class="anh"></a>
+            <p>Giày Nike Air Jordan 1 Low Triple White 2022 Likeauth</p>
+            <b>800.000 <u>đ</u></b>
+        </div>
+        <div class="item">
+            <a href="#"><img src="./Ảnh/nike2.jpg" alt="" class="anh"></a>
+            <p>Giày Nike Air Force 1 Low Louis Vuitton White Grey Trắng Xám</p>
+            <b>830.000 <u>đ</u></b>
+        </div>
+        <div class="item">
+            <a href="#"><img src="./Ảnh/nike3.jpg" alt="" class="anh"></a>
+            <p>Giày Nike Air Force 1 Gucci Sơn Tùng Bản 2023 Likeauth</p>
+            <b>1.350.000 <u>đ</u></b>
+        </div>
+        <div class="item">
+            <a href="#"><img src="./Ảnh/nike4.jpg" alt="" class="anh"></a>
+            <p>Giày Nike SB Dunk Low Reverse Panda Siêu Cấp</p>
+            <b>850.000 <u>đ</u></b>
+        </div>
+    </div>
+
+
+    <h4>Giày Adidas</h4>
+
+    <div class="khung2">
+        <div class="item2">
+            <a href="#"><img src="./Ảnh/adi1.jpeg" alt="" class="anh"></a>
+            <p>Giày Chạy Bộ Adidas EQT Bost 2023 Xám Trắng LikeAuth</p>
+            <b>1.100.000 <u>đ</u></b>
+        </div>
+        <div class="item2">
+            <a href="#"><img src="./Ảnh/adi2.jpeg" alt="" class="anh"></a>
+            <p>Giày Adidas Ultra Boost 60 Black white Rep 1:1</p>
+            <b>720.000 <u>đ</u></b>
+        </div>
+        <div class="item2">
+            <a href="#"><img src="./Ảnh/adi3.jpeg" alt="" class="anh"></a>
+            <p>Giày Yeezy Boost 350 v2 Static Nam Nữ Replica™ 1:1</p>
+            <b>770.000 <u>đ</u></b>
+        </div>
+        <div class="item2">
+            <a href="#"><img src="./Ảnh/adi4.jpg" alt="" class="anh"></a>
+            <p>Giày Adidas Superstar André Saraiva Chalk White Black – Sò XO</p>
+            <b>880.000 <u>đ</u></b>
+        </div>
+        
+    </div>
+
+    <footer class="text-center text-lg-start bg-white text-muted">
+        <div class="container">
+          <section class="d-flex justify-content-center justify-content-lg-between p-4" style="border-bottom: 2px solid black" >
+            <div class="me-5 d-none d-lg-block">
+              <p>Liên hệ ngay với ADMIN thông qua các mạng xã hội</p>
+            </div>
+            <div class="d-flex">
+              <a href="https://www.facebook.com/fpt.poly" class="me-4 link-secondary">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="https://www.youtube.com/channel/UCHXm-vzOfAuLucVBKDUfhvQ" class="me-4 link-secondary">
+                <i class="bi bi-youtube"></i>
+              </a>
+              <a href="https://www.tiktok.com/@fptpolytechnic?lang=en" class="me-4 link-secondary">
+                <i class="bi bi-tiktok"></i>
+              </a>
+            </div>
+          </section>
+          <div class="container text-center text-md-start mt-5">
+            <div class="row mt-3">
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <img src="./Ảnh/logo.jpg" alt="" style="width: 200px; height: 200px;">
+              </div>
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <h4>Các Trang</h4>
+                <p><a href="#">Trang Chủ</a></p>
+                <p><a href="#">Sản Phẩm</a></p>
+                <p><a href="#">Tin Tức</a></p>
+              </div>
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <h4>Chính Sách</h4>
+                <p><a href="#">Bảo Hành</a></p>
+                <p><a href="#">Thanh Toán</a></p>
+                <p><a href="#">Vận Chuyển</a></p>
+              </div>
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <h4>Liên hệ</h4>
+                <p><i class="bi bi-envelope"></i>     tungdqph39334@fpt.edu.vn</p><br>
+                <p><i class="bi bi-phone"></i>     Sđt: 0968320348</p><br>
+                <p><i class="bi bi-house"></i>     Địa chỉ: Hà Nội</p><br>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center p-4 bg-dark text-white">
+         <p>Dương Quang Tùng</p>
+      </div>
+      </footer>
+</body>
+
+</html>

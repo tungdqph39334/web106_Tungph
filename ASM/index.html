@@ -1,88 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/index.css">
+    <title>Trang chủ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" &quot; rel="stylesheet">
 </head>
+<style>
+    .navbar-collapse {
+  flex-grow: 0;
+}
+
+.nav-link {
+  color: white;
+}
+
+/* banner */
+.banner {
+  width: 100%;
+}
+
+/* tên truyện */
+p {
+  text-align: center;
+}
+
+/* Khung */
+
+.khung {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 0.5em;
+}
+
+.anh {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.item {
+  width: 24%;
+}
+
+.khung2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 0.5em;
+}
+
+.item2 {
+  width: 24%;
+}
+
+/* footer */
+
+#footer {
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 0.5em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.ten {
+  border-bottom-right-radius:10px ;
+  border-bottom-left-radius: 10px;
+}
+
+@media screen and (max-width: 598px) {
+  .item {
+    width: 49%;
+  }
+  
+  .item2 {
+    width: 49%;
+  }
+}
+
+@media screen and (max-width: 398px) {
+  .item {
+    width: 99%;
+  }
+  
+  .item2 {
+    width: 99%;
+  }
+}
+</style>
 <body>
-    <div class="menu">
-        <a href=""> <img src="./Ảnh/logo1.jpg" class="logo"> </a>
-        <ul>
-            <li class="li"><a href="">
-                <form action="" class="search">
-                    <input type="">
-                    <input class="timkiem" type="submit" value="Tìm Kiếm">
-                </form>
-            </a></li>
-            <li class="li"><a href=""> Hướng Dẫn</a></li>
-            <li class="li"><a href=""> Liên hệ</a></li>
-            <li class="li"><a href=""> Đại lý</a></li>
-            <li class="li"><a href=""> Bảng Giá</a></li>
-            <li class="li"><a href=""> Sản Phẩm</a></li>
-            <li class="li"><a href=""> Trang Chủ</a></li>
-            
-        </ul>
+    <nav class="navbar navbar-expand-lg bg-secondary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html"> <img src="./Ảnh/logo.jpg" alt="" style="width: 70px; height: 50px;"> </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./page2.html">Sản Phẩm</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Tin Tức</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+            </div>
+        </div>
+    </nav>
+
+    <img src="./Ảnh/banner1.webp" alt="" class="banner">
+
+    <h3>Sản Phẩm Nổi Bật</h3>
+
+    <div class="khung">
+        <div class="item">
+            <a href="#"><img src="./Ảnh/sp1.jpg" alt="" class="anh"></a>
+            <p>Giày Louis Vuitton LV Trainer ‘White Black’ Đen Trắng</p>
+        </div>
+        <div class="item">
+            <a href="#"><img src="./Ảnh/sp2.jpg" alt="" class="anh"></a>
+            <p>Giày Nike AF1 Bàn Chải Vàng Siêu Cấp</p>
+        </div>
+        <div class="item">
+            <a href="#"><img src="./Ảnh/sp3.jpeg" alt="" class="anh"></a>
+            <p>Giày Jordan 1 Low Paris</p>
+        </div>
+        <div class="item">
+            <a href="#"><img src="./Ảnh/sp4.webp" alt="" class="anh"></a>
+            <p>Giày Adidas Forum 84 cổ thấp đen trắng</p>
+        </div>
     </div>
-    <div>
-        <img src="./Ảnh/banner.jpg" class="banner" alt="">
-    </div>
-    <div class="tieude">
-        <h1>SẢN PHẨM NỔI BẬT</h1>
-    </div>
-    
+
+    <h3>Sản Phẩm Sắp Ra Mắt</h3>
+
+    <div class="khung2">
+        <div class="item2">
+            <a href="#"><img src="./Ảnh/sp5.jpg" alt="" class="anh"></a>
+            <p>Giày Nike AF1 Trà Sữa Siêu Cấp</p>
+        </div>
+        <div class="item2">
+            <a href="#"><img src="./Ảnh/sp6.webp" alt="" class="anh"></a>
+            <p>Giày Adidas Superstar Adifom Đen Siêu Cấp</p>
+        </div>
+        <div class="item2">
+            <a href="#"><img src="./Ảnh/sp7.jpg" alt="" class="anh"></a>
+            <p>MLB LINER LA Siêu Cấp</p>
+        </div>
+        <div class="item2">
+            <a href="#"><img src="./Ảnh/sp8.jpg" alt="" class="anh"></a>
+            <p>Giày Louis Vuitton LV Trainer Sneaker Grey Siêu Cấp</p>
+        </div>
         
     </div>
-    
 
-    <div class="bl7">
-        <div>
-            <img src="./Ảnh/logo1.jpg" class="anh8">
-            <p class="ttin6">CÔNG TY CỔ PHẦN GIÀY SNEAKER</p>
-            <p><a href="" class="ttin7">duongquangtung240@gmail.com</a></p>
-            <p><a href="" class="ttin7">0968320348</a></p>
-            <p class="ttin8">Tầng 9, Tòa nhà Gold Tower, Số 275 Nguyễn Trãi,Phường Thanh <br>
-                Xuân Trung, Quận Thanh Xuân,Thành <br>
-                phố Hà Nội, Việt Nam</p>
+    <footer class="text-center text-lg-start bg-white text-muted">
+        <div class="container">
+          <section class="d-flex justify-content-center justify-content-lg-between p-4" style="border-bottom: 2px solid black" >
+            <div class="me-5 d-none d-lg-block">
+              <p>Liên hệ ngay với ADMIN thông qua các mạng xã hội</p>
+            </div>
+            <div class="d-flex">
+              <a href="https://www.facebook.com/fpt.poly" class="me-4 link-secondary">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="https://www.youtube.com/channel/UCHXm-vzOfAuLucVBKDUfhvQ" class="me-4 link-secondary">
+                <i class="bi bi-youtube"></i>
+              </a>
+              <a href="https://www.tiktok.com/@fptpolytechnic?lang=en" class="me-4 link-secondary">
+                <i class="bi bi-tiktok"></i>
+              </a>
+            </div>
+          </section>
+          <div class="container text-center text-md-start mt-5">
+            <div class="row mt-3">
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <img src="./Ảnh/logo.jpg" alt="" style="width: 200px; height: 200px;">
+              </div>
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <h4>Các Trang</h4>
+                <p><a href="#">Trang Chủ</a></p>
+                <p><a href="#">Sản Phẩm</a></p>
+                <p><a href="#">Tin Tức</a></p>
+              </div>
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <h4>Chính Sách</h4>
+                <p><a href="#">Bảo Hành</a></p>
+                <p><a href="#">Thanh Toán</a></p>
+                <p><a href="#">Vận Chuyển</a></p>
+              </div>
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <h4>Liên hệ</h4>
+                <p><i class="bi bi-envelope"></i>     tungdqph39334@fpt.edu.vn</p><br>
+                <p><i class="bi bi-phone"></i>     Sđt: 0968320348</p><br>
+                <p><i class="bi bi-house"></i>     Địa chỉ: Hà Nội</p><br>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <div>
-            <p class="ttin9">Các trang</p>
-            <ul>
-                <li class="li2"><a href="">Trang chủ</a></li>
-                <li class="li2"><a href="">Sản Phẩm</a></li>
-                <li class="li2"><a href="">Bảng Giá</a></li>
-                <li class="li2"><a href="">Đại Lý</a></li>
-                <li class="li2"><a href="">Hướng Dẫn</a></li>
-                <li class="li2"><a href="">Liên Hệ</a></li>
-            </ul>
-        </div>
-
-        <div>
-            <p class="ttin9">Chính sách</p>
-            <ul>
-                <li class="li2"><a href="">Bảo Hành</a></li>
-                <li class="li2"><a href="">Thanh Toán</a></li>
-                <li class="li2"><a href="">Vận Chuyển</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="duongke">
-    </div>
-    <div class="bl8">
-        <ul>
-            <li class="list"><a>• CÔNG TY CỔ PHẦN GIÀY SNEAKER.</a></li>
-            <br>
-            <li class="list"><a>• Giấy CNĐKDN: 0109653543 - Cấp lần đầu ngày: 31/05/2021, được sửa đổi lần thứ 1 ngày
-                    15/06/2021. Cơ quan
-                    cấp: Phòng Đăng ký kinh doanh Sở Kế hoạch và Đầu tư Hà Nội</a></li>
-            <br>
-            <li class="list"><a>• Địa chỉ: Tầng 9, Tòa nhà Gold Tower, Số 275 Nguyễn Trãi, Phường Thanh Xuân Trung, Quận
-                    Thanh Xuân, Thành
-                    phố Hà Nội, Việt Nam. Số điện thoại: 0968320348</a></li>
-        </ul>
-    </div>
+        <div class="text-center p-4 bg-dark text-white">
+         <p>Dương Quang Tùng</p>
+      </div>
+      </footer>
 </body>
+
 </html>
